@@ -92,6 +92,8 @@
 | `Physical Network                   ` | Customer    | *Microsoft* | *Microsoft* | *Microsoft* |
 | `Physical Datacenter                ` | Customer    | *Microsoft* | *Microsoft* | *Microsoft* |
 
+-----
+
 ### Network Security Groups (NSGs):
 - Azure applies default/baseline security rules to new NSGs, Override default rules with new, higher priority rules.
 - filter network traffic to and from Azure resources on Azure Virtual Networks
@@ -100,21 +102,34 @@
 
 *Lab - Implement a Network Security Group*
 
-### Defense in depth
-- 
+### Azure Firewall
+- A stateful, managed Firewall as a Service (FaaS)
+- Grants/denies server access based on originating IP
+- Applies in-outbound traffic filtering rules
+- Built-in high availability
+- Unrestricted cloud scalability
+- Uses Azure Monitor logging
 
------
-
-### Network Security Groups
-- 
-
-### Firewalls
-- 
-
------
+### Azure Application Gateway
+- Provides a Web Application Firewall (WAF)
+- WAF provides centralized, inbound protection for web apps
 
 ### DDoS protection
-- 
+- Sanitizes unwanted network traffic before it impacts service availability
+- Basic service tier is automatically enabled in Azure
+- Standard service tier adds mitigation capabilities
+  - tuned to protect Azure Virtual Network resources
+
+-----
+
+### Defense in depth
+- NSGs + Azure Firewall
+- **Perimeter layer:**
+  - By Azure DDoS Protection + Azure Firewall
+  - Protects network boundaries
+- **Networking layer:**
+  - By Network Security Group (NSG)'s in-outbound rules
+  - Permits traffic to pass between networked resources
 
 -----
 
