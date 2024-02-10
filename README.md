@@ -3,8 +3,7 @@
 ## Azure Security features
 
 ### Microsoft Defender for Cloud
-- A monitoring service app that provides protection across Azure & on-premise DCs
-   - DC: datacenter
+- A monitoring service app that provides protection across Azure & on-premise datacenters
 - Provides security recommendations
 - Detect & block malware
 - Analyze & identify potential attacks
@@ -36,6 +35,8 @@
 - **Tailored Recommendations**: Recommendations based on existing workload with instructions on how to implement them
 - **Threat Protection**: Analyze attempted threats through alerts & impacted resource reports
 
+*Lab - Monitor and Resolve Security Issues by Using Security Center*
+
 ### Resource hygiene
 
 -----
@@ -47,9 +48,8 @@
   - Key management
   - Certificate management
   - Storing secrets backed by hardware security modules (HSMs)
-- *Lab - Configure key valut:*
-  - Resource group --> Create --> New Key Valut --> Bind to Resource Group & Name key valye --> Create --> Created Key Vault --> Keys --> Create Keys
-  - Resource group --> Storage Account --> Security + networking --> Encryption --> Encryption type --> Customer Managed Keys --> Select keys --> Bind created key vault & created key
+
+*Lab - Manage Encryption by Using an Azure Key Vault*
 
 ### Microsoft Sentinel
 - A security information & event management (SIEM) solution
@@ -60,25 +60,61 @@
   - Azure Advanced Threat Protection
   - Microsoft Cloud App Security
 
-Dedicated Hosts
+### Azure Dedicated Hosts
+- Provide physical servers that host Azure VMs that is for a singal workload
+- Provides hardware isolation at server level
+- Controls over maintenance event timing
+- Aligned with Azure Hybrid Use Benefits
 
 -----
 
 <br>
 
 ## Azure network security
+- A layered multi-level protection approach similar to OSI levels
+- Attacks against one layer are isolated from subsequent layers
 
-Defense in depth
+### Shared Security
+- Migrating from customer to cloud datacenters shifts the responsibility for security
+- Security becomes a shared concern as the on-premise data
+- **Service model dependent:**
+
+| Responsibility                        | On-Premises | IaaS model  | PaaS model  | SaaS model  |
+|---------------------------------------|-------------|-------------|-------------|-------------|
+| `Data, governance & Rights Mgmt.    ` | Customer    | Customer    | Customer    | Customer    |
+| `Client endpoints                   ` | Customer    | Customer    | Customer    | Customer    |
+| `Account & access management        ` | Customer    | Customer    | Customer    | Customer    |
+| `Identity & directory infrastructure` | Customer    | Customer    | *Ms*/Cs     | *Ms*/Cs     |
+| `Application                        ` | Customer    | Customer    | *Ms*/Cs     | *Microsoft* |
+| `Network Controls                   ` | Customer    | Customer    | *Ms*/Cs     | *Microsoft* |
+| `Operating System                   ` | Customer    | Customer    | *Microsoft* | *Microsoft* |
+| `Physical Hosts                     ` | Customer    | *Microsoft* | *Microsoft* | *Microsoft* |
+| `Physical Network                   ` | Customer    | *Microsoft* | *Microsoft* | *Microsoft* |
+| `Physical Datacenter                ` | Customer    | *Microsoft* | *Microsoft* | *Microsoft* |
+
+### Network Security Groups (NSGs):
+- Azure applies default/baseline security rules to new NSGs, Override default rules with new, higher priority rules.
+- filter network traffic to and from Azure resources on Azure Virtual Networks
+- Set in-outbound rules by destination IP, ports, and protocols
+- Add multiple rules, as needed, within subscription limits
+
+*Lab - Implement a Network Security Group*
+
+### Defense in depth
+- 
 
 -----
 
-Network Security Groups
+### Network Security Groups
+- 
 
-Firewalls
+### Firewalls
+- 
 
 -----
 
-DDoS protection
+### DDoS protection
+- 
 
 -----
 
