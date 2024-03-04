@@ -26,7 +26,7 @@
   - Helps reduce risk of data breaches
 - **Attack path analysis**:
   - Model traffic on your network to identify potential risks before user make changes
-- **Microsoft Entra Permissions Management**:
+- **Microsoft Entra (Azure Active Directory) Permissions Management**:
   - Provide comprehensive visibility and control over permissions for any identity
 
 ### Using Defender for Cloud
@@ -304,6 +304,9 @@
 
 #### How can the IT department use biometric properties, such as facial recognition, to enable delivery drivers to prove their identities?
 - Multifactor authentication
+
+#### Which two services are provided by Microsoft Entra (Azure Active Directory)?
+- Authentication & Single sign-on (SSO)
 
 #### How can the IT department reduce the number of times users must authenticate to access multiple applications?
 - Single sign-on (SSO)
