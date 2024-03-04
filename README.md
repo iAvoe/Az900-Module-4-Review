@@ -291,7 +291,7 @@
 
 -----
 
-### Access Management Layer Security
+### Access Management Layer Security & Microsoft Entra (Azure Active Directory)
 
 #### ________ & ________ controls access to infrastructure and change control.
 - Identity, Access
@@ -304,6 +304,12 @@
 
 #### How can the IT department use biometric properties, such as facial recognition, to enable delivery drivers to prove their identities?
 - Multifactor authentication
+
+#### Each Azure subscription can be managed by using a Microsoft account only
+- False, Azure Entra (Azure Active Directrory) account is required
+
+#### What can you use to sync identities from an on-premises Active Directory Domain Services (AD DS) domain to Microsoft Entra tenant?
+- Microsoft Entra Connect
 
 #### Which two services are provided by Microsoft Entra (Azure Active Directory)?
 - Authentication & Single sign-on (SSO)
