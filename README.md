@@ -228,9 +228,6 @@
 #### The ________ layer is about protecting organizations from network-based attacks against your resources.
 - Network Perimeter
 
-#### Which layer of Defense-in-depth is focused on preventing network-based attacks? 
-- Perimeter layer (Perimeter Security)
-
 #### What are network security groups?
 - Enables you to filter network traffic to and from Azure resources within an Azure virtual network
 
@@ -248,6 +245,22 @@
 
 #### ________ allow you to filter network traffic to and from Azure resources in an Azure virtual network. IT can contain multiple inbound and outbound security rules that enable you to filter traffic to and from resources by source destination IP address, port, and protocol.
 - Network security groups
+
+#### What type of data is actively moving from one location to another, such as across the internet or through a private network?
+- In transit
+
+#### How can Tailwind Traders ensure that certain VM workloads are physically isolated from workloads being run by other Azure customers?
+- Run the VMs on Azure Dedicated Host
+
+#### How can Tailwind Traders allow some users to control the virtual machines in each environment but prevent them from modifying networking and other resources in the same resource group or Azure subscription?
+- Create a role assignment through Azure role-based access control (Azure RBAC)
+
+#### What can you use to allow a user to manage all the resources in a resource group?
+- Azure role-based access control (Azure RBAC)
+
+-----
+
+### Perimeter Layer Firewall
 
 #### What's the best way for Tailwind Traders to limit all outbound traffic from VMs to known hosts?
 - Create application rules in Azure Firewall
@@ -276,15 +289,6 @@
 #### A ________ is a service that grants server access based on the originating IP address of each request.
 - Firewall
 
-#### What type of data is actively moving from one location to another, such as across the internet or through a private network?
-- In transit
-
-#### How can Tailwind Traders ensure that certain VM workloads are physically isolated from workloads being run by other Azure customers?
-- Run the VMs on Azure Dedicated Host
-
-#### How can Tailwind Traders allow some users to control the virtual machines in each environment but prevent them from modifying networking and other resources in the same resource group or Azure subscription?
-- Create a role assignment through Azure role-based access control (Azure RBAC)
-
 -----
 
 ### Access Management Layer Security
@@ -295,21 +299,21 @@
 #### How can the IT department ensure that employees at the company's retail stores can access company applications only from approved tablet devices?
 - Conditional Access
 
+#### What can you use to ensure that a user can only access applications from compliant devices?
+- Conditional Access
+
 #### How can the IT department use biometric properties, such as facial recognition, to enable delivery drivers to prove their identities?
 - Multifactor authentication
 
 #### How can the IT department reduce the number of times users must authenticate to access multiple applications?
-- SSO
+- Single sign-on (SSO)
+
+#### What enables a user to sign in one time and use that credential to access multiple resources and applications from different providers?
+- Single sign-on (SSO)
 
 -----
 
 ### Data & other Layers' security
-
-#### Defense in depth can be visualized as:
-- A set of layers with the data to be secured in the center
-
-#### ________ is the first line of defense to protect computing hardware in the data center.
-- Physical layer security
 
 #### ________ ensures applications are secure and free from vulnerabilities.
 - Application layer
@@ -328,9 +332,6 @@
 
 ####  Which is the best way for Tailwind Traders to safely store its certificates so that they're accessible to cloud VMs?
 - Store the certificates in Azure Key Vault
-
-#### What strategy employs a series of mechanisms to slow the advance of an attack aimed at acquiring unauthorized access to data?
-- Defense-in-depth (combining measures)
 
 #### ________ is a monitoring service that provides threat protection across both Azure and on-premises datacenters 
 - Microsoft Defender for Cloud
@@ -379,6 +380,25 @@
 
 #### ______ attacks attempt to overwhelm and exhaust an application's resources, making the application slow or unresponsive to legitimate users.
 - DDoS
+
+-----
+
+### Multi-layer Security
+
+#### What is the purpose of defense in depth?
+- To use several layers of protection to prevent information from being accessed by unauthorized users
+
+#### Which layer of Defense-in-depth is focused on preventing network-based attacks? 
+- Perimeter layer (Perimeter Security)
+
+#### Defense in depth can be visualized as:
+- A set of layers with the data to be secured in the center
+
+#### ________ is the first line of defense to protect computing hardware in the data center.
+- Physical layer security
+
+#### What strategy employs a series of mechanisms to slow the advance of an attack aimed at acquiring unauthorized access to data?
+- Defense-in-depth (combining measures)
 
 -----
 
