@@ -137,7 +137,19 @@
 
 ## Quiz
 
-### Azure Logic Apps / Functions
+### Serverless computing
+
+#### What can you use to execute code in a serverless environment?
+- Azure Functions
+
+#### Which of the following services should be used when the primary concern is to perform work in response to an event (often via a REST command) that needs a response in a few seconds?
+- Azure Functions
+
+#### You need to process messages from a queue, parse them by using some existing imperative logic written in Java, and then send them to a third-party API. Which serverless option should you choose?
+- Azure Functions
+
+#### Which Azure serverless computing technology provides the ability to execute workflows to automate business scenarios by using triggers without writing any code?
+- Azure Logic Apps
 
 #### Within Microsoft Sentinel, which Azure product is used to run automated playbooks in response to alerts? 
 - Azure Logic Apps
@@ -156,9 +168,6 @@
 - They differ at intent:
   - Azure Functions is a serverless compute service
   - Azure Logic Apps is intended to be a serverless orchestration service
-
-#### You need to process messages from a queue, parse them by using some existing imperative logic written in Java, and then send them to a third-party API. Which serverless option should you choose?
-- Azure Functions
 
 -----
 
