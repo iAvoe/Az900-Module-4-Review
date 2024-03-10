@@ -68,8 +68,6 @@
 
 -----
 
-<br>
-
 ## Azure network security
 - A layered multi-level protection approach similar to OSI levels
 - Attacks against one layer are isolated from subsequent layers
@@ -222,14 +220,14 @@
 
 ### Perimeter Layer Security
 
-#### An ASG enables you to group servers with similar ________ requirement, and group together servers with similar ________.
-- port filtering, functions
+#### Which defense in depth layer uses distributed denial of service (DDoS) protection?
+- Perimeter layer
 
 #### The ________ layer is about protecting organizations from network-based attacks against your resources.
 - Network Perimeter
 
-#### What are network security groups?
-- Enables you to filter network traffic to and from Azure resources within an Azure virtual network
+#### An ASG enables you to group servers with similar ________ requirement, and group together servers with similar ________.
+- port filtering, functions
 
 #### Rules are processed by in what order?
 - By order of priority number (100 - 4096, Lower to high numbers)
@@ -243,24 +241,24 @@
 #### Can you remove default rules Azure sets for Network Security groups?
 - No, but you can override them by creating new rules with high priorities
 
-#### ________ allow you to filter network traffic to and from Azure resources in an Azure virtual network. IT can contain multiple inbound and outbound security rules that enable you to filter traffic to and from resources by source destination IP address, port, and protocol.
-- Network security groups
-
 #### What type of data is actively moving from one location to another, such as across the internet or through a private network?
 - In transit
 
 #### How can Tailwind Traders ensure that certain VM workloads are physically isolated from workloads being run by other Azure customers?
 - Run the VMs on Azure Dedicated Host
 
-#### How can Tailwind Traders allow some users to control the virtual machines in each environment but prevent them from modifying networking and other resources in the same resource group or Azure subscription?
-- Create a role assignment through Azure role-based access control (Azure RBAC)
+#### What are network security groups?
+- Enables you to filter network traffic to and from Azure resources within an Azure virtual network
 
-#### What can you use to allow a user to manage all the resources in a resource group?
-- Azure role-based access control (Azure RBAC)
+#### ________ allow you to filter network traffic to and from Azure resources in an Azure virtual network. IT can contain multiple inbound and outbound security rules that enable you to filter traffic to and from resources by source destination IP address, port, and protocol.
+- Network security groups
 
 -----
 
 ### Perimeter Layer Firewall
+
+#### ________ & ________ controls access to infrastructure and change control.
+- Identity, Access
 
 #### What's the best way for Tailwind Traders to limit all outbound traffic from VMs to known hosts?
 - Create application rules in Azure Firewall
@@ -294,43 +292,6 @@
 
 #### How can Tailwind Traders ensure that certain VM workloads are physically isolated from workloads being run by other Azure customers?
 - Run the VMs on Azure Dedicated Host
-
-#### (Repeats from M1-2) How can Tailwind Traders allow some users to control the virtual machines in each environment but prevent them from modifying networking and other resources in the same resource group or Azure subscription?
-- Create a role assignment through Azure role-based access control (Azure RBAC)
-
-#### (Repeats from M1-2) What can you use to allow a user to manage all the resources in a resource group?
-- Azure role-based access control (Azure RBAC)
-
------
-
-### Access Management Layer Security & Microsoft Entra (Azure Active Directory)
-
-#### ________ & ________ controls access to infrastructure and change control.
-- Identity, Access
-
-#### How can the IT department ensure that employees at the company's retail stores can access company applications only from approved tablet devices?
-- Conditional Access
-
-#### What can you use to ensure that a user can only access applications from compliant devices?
-- Conditional Access
-
-#### How can the IT department use biometric properties, such as facial recognition, to enable delivery drivers to prove their identities?
-- Multifactor authentication
-
-#### Each Azure subscription can be managed by using a Microsoft account only
-- False, Azure Entra (Azure Active Directrory) account is required
-
-#### What can you use to sync identities from an on-premises Active Directory Domain Services (AD DS) domain to Microsoft Entra tenant?
-- Microsoft Entra Connect
-
-#### Which two services are provided by Microsoft Entra (Azure Active Directory)?
-- Authentication & Single sign-on (SSO)
-
-#### How can the IT department reduce the number of times users must authenticate to access multiple applications?
-- Single sign-on (SSO)
-
-#### What enables a user to sign in one time and use that credential to access multiple resources and applications from different providers?
-- Single sign-on (SSO)
 
 -----
 
@@ -420,16 +381,3 @@
 
 #### What strategy employs a series of mechanisms to slow the advance of an attack aimed at acquiring unauthorized access to data?
 - Defense-in-depth (combining measures)
-
------
-
-### Others
-
-#### Which of the following is true for AzureHDInsight?
-- Open-source analytics service to analyze streaming or historical data
-
-#### Which of the following is true for Resource locking?
-- Prevents resources from being accidentally deleted or changed
-
-#### Which of the following is true for Azure Policy?
-- A service in Azure that enables you to create, assign, and manage policies that control or audit your resources
