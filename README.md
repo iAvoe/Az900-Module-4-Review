@@ -273,8 +273,11 @@
 #### How can Tailwind Traders ensure that certain VM workloads are physically isolated from workloads being run by other Azure customers?
 - Run the VMs on Azure Dedicated Host
 
-#### How can Tailwind Traders allow some users to control the virtual machines in each environment but prevent them from modifying networking and other resources in the same resource group or Azure subscription?
+#### (Repeats from M1-2) How can Tailwind Traders allow some users to control the virtual machines in each environment but prevent them from modifying networking and other resources in the same resource group or Azure subscription?
 - Create a role assignment through Azure role-based access control (Azure RBAC)
+
+#### (Repeats from M1-2) What can you use to allow a user to manage all the resources in a resource group?
+- Azure role-based access control (Azure RBAC)
 
 -----
 
