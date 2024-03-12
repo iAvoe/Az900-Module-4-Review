@@ -169,6 +169,16 @@
 
 -----
 
+### Microsoft Purview Data Policy
+
+#### Which feature in the Microsoft Purview governance portal should you use to manage access to data sources and datasets?
+- Data Policy
+
+#### Which feature in the Microsoft purview governance portal should you use to manage access?
+- Collections
+
+-----
+
 ### Microsoft Sentinel
 
 #### What does Microsoft Sentinel provide?
